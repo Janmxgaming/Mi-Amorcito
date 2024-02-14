@@ -27,7 +27,7 @@
         top: 22%;
         left: 50%;
         width: 85%;
-        font-size: 13px;
+        font-size: 19px;
         transform: translate(-50%, -50%);
         z-index: 2;
         text-align: center;
@@ -43,8 +43,26 @@
         z-index: 2;
     }
 
+    .ver-regalo-btn {
+      position: absolute;
+      top: calc(400% + 100px); /* Ajusta la posición vertical del botón */
+      left: 50%;
+      width: 140px;
+      height: 45px;
+      font-size: 17px;
+      transform: translateX(-50%);
+      z-index: 2;
+      background-color: rgb(4, 184, 230);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Bree Serif', sans-serif;
+    }
+
       audio {
-          width: 100px; /* Ajusta el ancho del reproductor de música según sea necesario */
+          width: 300px; /* Ajusta el ancho del reproductor de música según sea necesario */
       }
   </style>
 </head>
@@ -379,16 +397,25 @@
 
     <div class="text-overlay">
       <p>Hola mi niña 🥺💗,</p>
-      <p>¿Sabias que...? No todas las estrellas brillan en el cielo, por ejemplo... tú estás en tu casa leyendo esto mientras escuchas esta hermosa canción 🥺💗 y para mi, tu eres la estrella que mas brilla e ilumina mi alma. 🥰</p>
-      <p>Te amo preciosa, nunca lo olvides 🩷.</p>
+      <p>¿Como estás? Aquí tienes el segundo detalle amor 🥰, feliz 14 de febrero, gracias por estar aquí, gracias por hacerme feliz 💗 tú me pediste esta canción, la escuche y me encantó y hoy te la dedico 💗</p>
+      <p>Te amo preciosa, nunca lo olvides 🩷, Me dijo Inzaghi que tenia algo extra preparado 🥺.</p>
 </div>
 
   <!-- Agrega tu reproductor de música o enlace a la canción aquí -->
   <div class="cancion">
     <audio controls>
-        <source src="Chiquilla bonita – Los Bukis.mp3" type="audio/mp3">
+        <source src="Melting - Cuco.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
+
+    <button class="ver-regalo-btn" onclick="mostrarAlerta()">Ver Regalo</button>
+    <script>
+      function mostrarAlerta() {
+        if (confirm("Aqui tienes este detalle que prepare para ti 😘, de parte del asistente mas chingon que conoces, disfrutalo que me costo mucho trabajo hacerlo 🫡")) {
+          window.location.href = 'index-sanvalentin.html';
+        }
+      }
+    </script>
 
   </div>
 
